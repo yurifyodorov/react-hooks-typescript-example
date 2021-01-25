@@ -1,0 +1,39 @@
+@import 'breakpoints';
+@import 'color-pallete';
+
+
+// RSuite color scheme: https://rsuitejs.com/design/default/
+
+// Primary
+$primary: $blue-500; // tw
+$primary-hover: #2589F5; // rsuite
+$primary-focus: #2589F5; // rsuite
+$primary-click: #1675E0; // rsuite
+$primary-disable: #CCE9FF; // rsuite
+$primary-loading: #3498FF; // rsuite
+
+// Default
+$default: #F7F7FA;
+$default-hover: #E5E5EA; // rsuite
+$default-focus: #E5E5EA; // rsuite
+$default-click: #D9D9D9; // rsuite
+$default-disable: #F7F7FA; // rsuite
+$default-loading: #F7F7FA; // rsuite
+
+// Subtitle
+$subtitle: $white;
+$subtitle-hover: #F7F7FA; // rsuite
+$subtitle-focus: #F7F7FA; // rsuite
+$subtitle-click: #E5E5EA; // rsuite
+$subtitle-disable: $white; // tw
+$subtitle-loading: $white; // tw
+
+
+// State
+$status-info: $blue-500; // tw
+$status-succes: $green-700; // tw
+$status-warning: #FFC008;
+$status-error: #EB5757;
+
+// Backgrounds
+$bg-page: $lightBlue-100;

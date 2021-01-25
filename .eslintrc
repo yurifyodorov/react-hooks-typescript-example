@@ -1,0 +1,108 @@
+{
+  "parser": "@typescript-eslint/parser",
+  "extends": [
+    "airbnb-typescript",
+    "airbnb/hooks",
+    "plugin:react/recommended",
+    "plugin:prettier/recommended",
+    "plugin:@typescript-eslint/recommended",
+    "prettier",
+    "prettier/react",
+    "prettier/@typescript-eslint"
+  ],
+  "parserOptions": {
+    "ecmaVersion": 2019,
+    "sourceType": "module",
+    "ecmaFeatures": {
+      "legacyDecorators": true,
+      "jsx": true
+    },
+    "project": "./tsconfig.json",
+    "tsconfigRootDir": ".",
+    "createDefaultProgram": true
+  },
+  "settings": {
+    "react": {
+      "version": "detect"
+    }
+  },
+  "env": {
+    "browser": true,
+    "node": true,
+    "jest": true
+  },
+  "plugins": ["import"],
+  "rules": {
+    "prettier/prettier": [
+      "error",
+      {
+        "endOfLine": "auto"
+      }
+    ],
+    "import/order": [
+      "error",
+      {
+        "groups": ["internal", "builtin", "external", "parent", "index", "sibling"]
+      }
+    ],
+    "semi": ["error", "always"],
+    "import/named": "off",
+    "import/no-unresolved": "off",
+    "import/no-extraneous-dependencies": "off",
+    "import/prefer-default-export": "off",
+    "no-unused-expressions": "off",
+    "arrow-parens": ["error", "as-needed", { "requireForBlockBody": false }],
+    "camelcase": "off",
+    "comma-dangle": ["warn", "always-multiline"],
+    "function-paren-newline": ["error", "consistent"],
+    "max-len": [
+      "warn",
+      {
+        "code": 120,
+        "tabWidth": 2,
+        "ignoreTrailingComments": true,
+        "ignoreUrls": true,
+        "ignoreStrings": true,
+        "ignoreRegExpLiterals": true
+      }
+    ],
+    "newline-before-return": "error",
+    "no-confusing-arrow": ["error", { "allowParens": true }],
+    "no-console": ["error", { "allow": ["warn", "error"] }],
+    "no-irregular-whitespace": ["error", { "skipStrings": true }],
+    "no-return-assign": ["error", "except-parens"],
+    "react/style-prop-object": "off",
+    "react/destructuring-assignment": "off",
+    "react/prefer-stateless-function": "warn",
+    "react/no-unused-prop-types": ["error", { "skipShapeProps": true }],
+    "react/jsx-props-no-spreading": "off",
+    "jsx-a11y/href-no-hash": "off",
+    "jsx-a11y/anchor-is-valid": ["warn", { "aspects": ["invalidHref"] }],
+    "@typescript-eslint/no-explicit-any": "warn",
+    "@typescript-eslint/camelcase": "off",
+    "@typescript-eslint/no-empty-function": "off",
+    "react/display-name": "off",
+    "no-bitwise": "off",
+    "no-continue": "off",
+    "no-mixed-operators": "off",
+    "operator-linebreak": ["off"],
+    "react/state-in-constructor": "off",
+    "react/jsx-one-expression-per-line": "off",
+    "react/prop-types": "off",
+    "react/require-default-props": "off",
+    "react/jsx-fragments": "off",
+    "react/static-property-placement": "off",
+    "implicit-arrow-linebreak": "off",
+    "lines-between-class-members": "off",
+    "no-restricted-syntax": "off",
+    "no-plusplus": "off",
+    "no-else-return": "off",
+    "prefer-destructuring": "off",
+    "no-useless-constructor": "off",
+    "@typescript-eslint/no-useless-constructor": "error",
+    "@typescript-eslint/explicit-function-return-type": "off",
+    "@typescript-eslint/no-non-null-assertion": "off",
+    "@typescript-eslint/explicit-module-boundary-types": "warn",
+    "@typescript-eslint/ban-types": "off"
+  }
+}
