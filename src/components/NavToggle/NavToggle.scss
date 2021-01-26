@@ -1,0 +1,34 @@
+@import '../../styles/main.scss';
+
+.nav-toggle {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  // background: $bg-sidebar !important;
+
+  .body {
+    // display: flex;
+    // justify-content: space-between;
+    // align-items: center;
+    width: 100%;
+  }
+
+  .toolbar > .rs-btn {
+    width: $sidebar-width;
+    height: $sidebar-width !important;
+    margin-bottom: 10px;
+    box-sizing: border-box !important;
+  }
+
+  .avatar .rs-dropdown-toggle {
+    width: $sidebar-width;
+    padding: 8px 16px !important;
+  }
+
+  .toggle .rs-nav-item {
+    width: $sidebar-width !important;
+  }
+
+  .avatar .rs-dropdown-toggle-caret { display: none; }
+}

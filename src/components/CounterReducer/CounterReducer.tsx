@@ -1,4 +1,4 @@
-import * as React from 'react';
+import React from 'react';
 
 interface State {
   count: number;
@@ -25,7 +25,7 @@ const reducer: React.Reducer<State, Action> = (state, action) => {
   }
 };
 
-const CounterReducer = () => {
+const CounterReducer: React.FC = () => {
   const [state, dispatch] = React.useReducer<React.Reducer<State, Action>>(reducer, initialState);
 
   return (

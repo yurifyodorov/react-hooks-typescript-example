@@ -1,6 +1,6 @@
-import * as React from 'react';
+import React from 'react';
 
-const CounterTitle = () => {
+const CounterTitle: React.FC = () => {
   const [count, setCount] = React.useState(0);
 
   React.useEffect(() => {

@@ -1,6 +1,4 @@
 # Readme
-Sample application using React Hooks, TypeScript + Strict Prettier + SCSS
-
 
 Проект использует [Create React App](https://github.com/facebook/create-react-app).
 

@@ -1,94 +1,62 @@
-.container {
+@import '../../styles/main.scss';
+
+.App {
+  position: relative;
+  height: 100vh;
+}
+
+// Logo component
+.logo {
   display: flex;
   align-items: center;
-  justify-content: center;
+  height: 80px;
+  padding-left: 20px;
+
+  > .title {
+    color: #005796;
+    text-transform: uppercase;
+    display: none;
+  }
+}
+
+.sidebar-left {
+  position: relative;
+  background: $bg-sidebar;
+
+  > .menu {
+    background: inherit;
+    margin: 60px auto;
+  }
+
+  > .menu .item > a .icon { font-size: 20px; }
+
+}
+
+// Hide title if expanded
+.sidebar-left.-expanded > .logo .title { display: block; }
+
+
+.page-main {
+  background-color: $bg-page;
   min-height: 100vh;
-}
 
-.app {
-  text-align: center;
-  padding: 32px;
-  border-radius: 8px;
-  box-shadow: 0 2px 16px 0 rgba(0, 0, 0, 0.5);
-  background-color: #444444;
-  min-width: 600px;
-}
-
-.separator {
-  margin: 16px 0;
-  height: 4px;
-  border-radius: 2px;
-  width: 100%;
-  background-color: #f353d0;
-}
-
-body {
-  margin: 0;
-  padding: 0;
-  font-family: "Poppins", sans-serif;
-  font-weight: 500;
-  background-image: radial-gradient(circle at 62% 44%, #f353d0, #5801bc);
-  min-height: 100vh;
-  font-size: 16px;
-  color: #fff;
-}
-
-#root {
-  min-height: 100vh;
-}
-
-p {
-  margin: 0 0 8px;
-}
-
-button {
-  border-radius: 16px;
-  background-color: #9339f9;
-  padding: 8px 16px;
-  border: 0;
-  color: #fff;
-  font-size: 16px;
-  transition: background-color 200ms ease;
-  outline: none;
-  cursor: pointer;
-  font-weight: 700;
-}
-
-button + button {
-  margin-left: 8px;
-}
-
-button:hover,
-button:focus,
-button.active {
-  background-color: #f353d0;
-}
-
-.github-corner:hover .octo-arm {
-  animation: octocat-wave 560ms ease-in-out;
-}
-
-@keyframes octocat-wave {
-  0%,
-  100% {
-    transform: rotate(0);
+  > .header {
+    margin-left: 20px;
   }
-  20%,
-  60% {
-    transform: rotate(-25deg);
-  }
-  40%,
-  80% {
-    transform: rotate(10deg);
-  }
-}
-
-@media (max-width: 500px) {
-  .github-corner:hover .octo-arm {
-    animation: none;
+  
+  > .content {
+    background: $white;
+    margin: 20px;
+    padding: 20px;
   }
 
-  .github-corner .octo-arm {
-    animation: octocat-wave 560ms ease-in-out;
-  }
+}
+
+.test-buttons {
+  position: absolute;
+  right: 10px;
+  bottom: 10px;
+  width: max-content;
+  background: yellow;
+  padding: 5px;
 }
